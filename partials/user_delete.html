@@ -1,0 +1,23 @@
+<div class="modal_head">
+    <i class="icon_close" onclick="common.modal_hide()"></i>
+</div>
+<div class="modal_body">
+    <div class="input_group_modal">
+        <div>First name</div>
+        <input type="text" id="first_name" value="{$user.first_name}" disabled>
+    </div>
+
+    <div class="input_group_modal">
+        <div>Last name</div>
+        <input type="text" id="last_name" value="{$user.last_name}" disabled>
+    </div>
+
+    <div class="modal_controls">
+        <div>
+            <button type="submit" onclick="common.user_delete({$user.id})" class="btn_modal">Delete</button>
+        </div>
+        <div>
+            <div class="btn_modal light" onclick="common.modal_hide();">Cancel</div>
+        </div>
+    </div>
+</div>
